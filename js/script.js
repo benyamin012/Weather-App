@@ -1,14 +1,14 @@
 let imgsrc =[
-  '1.png',
-  '2.jpg',
-  '3.jpg',
-  '4.jpg',
-  '5.jpg',
-  '6.jpg',
-  '7.jpg',
-  '8.jpg',
-  '9.jpg',
-  '10.jpg',
+  'img/1.jpg',
+  'img/2.jpg',
+  'img/3.jpg',
+  'img/4.jpg',
+  'img/5.jpg',
+  'img/6.jpg',
+  'img/7.jpg',
+  'img/8.jpg',
+  'img/9.jpg',
+  'img/10.jpg',
 ];
 let imgresolt
 
@@ -53,9 +53,12 @@ let $ = document;
 
 
   let pressEnter = $.querySelector('input')
-  
+  let srearchbtn = $.getElementById("search")
+  srearchbtn.addEventListener('click',() =>{
+    fetchdata()
+  })
   pressEnter.addEventListener('keypress',(event) =>{
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 ) {
         fetchdata()
     }
   })
